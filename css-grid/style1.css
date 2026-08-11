@@ -1,0 +1,90 @@
+*{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        html,body{
+            height: 100%;
+            width: 100%;
+        }
+        main{
+            height: 100vh;
+            width: 100%;
+          background-color: #212121;
+            display: grid;
+            grid-template-columns: 25% 25% 25% 25%;
+            grid-template-rows: 30% 10% 10% 5% 45%;
+            grid-template-areas: 
+            "left-top top-center top-center1 top-right"
+            "left-center top-center top-center1-bottom top-right"
+            "left-bottom top-center top-center1-bottom top-right"
+            "left-bottom top-center-bottom top-center1-bottom top-right"
+            "left-bottom top-center-bottom top-center1-bottom top-right-bottom";
+            
+           
+        }
+
+        .left-top {
+    background-color: #FF6B6B;
+    grid-area: left-top;
+    border: 1px solid red;
+    border-radius: 20px;
+}
+
+.left-center {
+    background-color: #4ECDC4;
+    grid-area: left-center;
+    border: 1px solid red;
+    border-radius: 20px;
+}
+
+.left-bottom {
+    background-color: #45B7D1;
+    grid-area: left-bottom;
+    border: 1px solid red;
+    border-radius: 20px;
+}
+
+.top-center {
+    background-color: #96CEB4;
+    grid-area: top-center;
+    border: 1px solid red;
+    border-radius: 20px;
+}
+
+.top-center-bottom {
+    background-color: #FFEAA7;
+    grid-area: top-center-bottom;
+    border: 1px solid red;
+    border-radius: 20px;
+}
+
+.top-center1 {
+    background-color: #DDA0DD;
+    grid-area: top-center1;
+    border: 1px solid red;
+    border-radius: 20px;
+}
+
+.top-center1-bottom {
+    background-color: #FF8A5C;
+    grid-area: top-center1-bottom;
+    border: 1px solid red;
+    border-radius: 20px;
+}
+
+.top-right {
+    background-color: #A29BFE;
+    grid-area: top-right;
+    border: 1px solid red;
+    border-radius: 20px;
+}
+
+.top-right-bottom {
+    background-color: #FD79A8;
+    grid-area: top-right-bottom;
+    border: 1px solid red;
+    border-radius: 20px;
+}
+
