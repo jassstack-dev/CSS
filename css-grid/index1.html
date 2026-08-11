@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+/* second layout */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+main{
+    height: 100%;
+    width: 100%;
+    background-color: #212121;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr ;
+    grid-template-areas: 
+    'header-left header-right header-right'
+    "header-left left-center left-right";
+    gap: 20px;
+}
+
+.header-left{
+    background-color: yellow;
+    grid-area: header-left;
+}
+
+.header-right{
+    background-color: blue;
+    grid-area: header-right;
+}
+
+.left{
+    background-color: violet;
+    grid-area: header-left;
+}
+
+.left-center{
+    background-color: turquoise;
+    grid-area: left-center;
+}
+
+.left-right{
+    background-color: brown;
+    grid-area:left-right
+}
+    </style>
+</head>
+<body>
+      <main>
+        <div class="header-left"></div>
+        <div class="header-right"></div>
+        <div class="left"></div>
+        <div class="left-center"></div>
+        <div class="left-right"></div>
+    
+    </main>
+</body>
+</html>
